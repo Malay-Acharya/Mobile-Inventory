@@ -7,6 +7,33 @@ const initialState = [{
     "ram":"4GB",
     "weight":"221g",
     "image":"https://m.media-amazon.com/images/I/717eAvRa5dL._SL1500_.jpg",
+},{
+    "id":"2",
+    "name":"SAMSUNG GALAXY M12",
+    "price":"10,499",
+    "units":"",
+    "os":"Android",
+    "ram":"4GB",
+    "weight":"221g",
+    "image":"https://m.media-amazon.com/images/I/717eAvRa5dL._SL1500_.jpg",
+},{
+    "id":"3",
+    "name":"SAMSUNG GALAXY M12",
+    "price":"10,499",
+    "units":"",
+    "os":"Android",
+    "ram":"4GB",
+    "weight":"221g",
+    "image":"https://m.media-amazon.com/images/I/717eAvRa5dL._SL1500_.jpg",
+},{
+    "id":"4",
+    "name":"SAMSUNG GALAXY M12",
+    "price":"10,499",
+    "units":"",
+    "os":"Android",
+    "ram":"4GB",
+    "weight":"221g",
+    "image":"https://m.media-amazon.com/images/I/717eAvRa5dL._SL1500_.jpg",
 }];
 
 const changeinventory = (state = initialState, action) => {

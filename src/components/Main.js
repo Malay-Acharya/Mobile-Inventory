@@ -6,7 +6,7 @@ import Gallery from './Gallery';
 export default function Main() {
   const val2 = useSelector(state => state.changeview);
   return (
-    <div className='border-2'>
+    <div className=' h-auto border-2 border-grey'>
         {val2 === true?<MainList/>:<Gallery/>}
     </div>
   )
