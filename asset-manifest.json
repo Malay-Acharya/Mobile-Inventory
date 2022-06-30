@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Mobile-Inventory/static/css/main.47474fdf.css",
-    "main.js": "/Mobile-Inventory/static/js/main.0c5826bf.js",
+    "main.js": "/Mobile-Inventory/static/js/main.d6b055c7.js",
     "static/js/787.97499973.chunk.js": "/Mobile-Inventory/static/js/787.97499973.chunk.js",
     "index.html": "/Mobile-Inventory/index.html",
     "main.47474fdf.css.map": "/Mobile-Inventory/static/css/main.47474fdf.css.map",
-    "main.0c5826bf.js.map": "/Mobile-Inventory/static/js/main.0c5826bf.js.map",
+    "main.d6b055c7.js.map": "/Mobile-Inventory/static/js/main.d6b055c7.js.map",
     "787.97499973.chunk.js.map": "/Mobile-Inventory/static/js/787.97499973.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47474fdf.css",
-    "static/js/main.0c5826bf.js"
+    "static/js/main.d6b055c7.js"
   ]
 }
