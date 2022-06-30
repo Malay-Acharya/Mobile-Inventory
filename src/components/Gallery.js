@@ -7,9 +7,9 @@ export default function Gallery() {
     <div className='grid grid-cols-4 gap-3'>
       {list.map(item => {
         return(
-          <div key = {item.id} className=' h-96 flex flex-col items-center py-4 relative' >
+          <div key = {item.id} className=' border-2 border-grey h-96 flex flex-col items-center py-4 relative' >
             <div className='overflow-hidden cursor-pointer'>
-                <img src={item.image} className="h-64"></img>
+                <img src={item.image} alt = "the phone" className="h-64"></img>
             </div>
             <h2 className=''>{item.name}</h2>
             <h2 className=''>{item.price}</h2>
