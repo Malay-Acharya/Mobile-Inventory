@@ -1,14 +1,20 @@
 import React from 'react'
-import {  } from 'react-icons'
+import { useDispatch } from 'react-redux/es/exports'
+import { CHANGEVIEW } from '../actions'
 
 export default function View() {
+  const dispatch = useDispatch();
+  const viewchanged = (e) =>{
+    dispatch(CHANGEVIEW(e.target.value))
+  }
+
   return (
     <div className=' absolute top-6 right-20 flex justify-end mr-6 gap-8'>
         <form className='border-black border-2 inline-block py-1 pr-4 pl-2 text-m'>
             <label className='pr-2 text-gray-500'>View</label>
-            <select defaultValue="Gallery" name="view" className='outline-0 border-6 focus:outline-none cursor-pointer '>
-            <option value="Gallery">Gallery</option>
-            <option value="List">List</option>
+            <select onChange={e => viewchanged(e)}  defaultValue="Gallery" name="view" className='outline-0 border-6 focus:outline-none cursor-pointer '>
+            <option value="1">Gallery</option>
+            <option value="0">List</option>
             </select>
         </form>
         <form className='border-black border-2 inline-block py-1 pr-4 pl-2 text-m'>

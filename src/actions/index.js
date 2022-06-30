@@ -11,3 +11,10 @@ export const CHANGECLICK = (item) => {
         payload: item
     }
 }
+
+export const CHANGEVIEW = (item) =>{
+    return {
+        type: 'CHANGEVIEW',
+        payload: item
+    }
+}
