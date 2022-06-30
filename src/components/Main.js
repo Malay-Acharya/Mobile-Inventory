@@ -1,9 +1,10 @@
 import React from 'react'
+import MainList from './List'
 
 export default function Main() {
   return (
-    <div className='border-2 mt-24 w-9/12'>
-        Hello
+    <div className='border-2'>
+        <MainList/>
     </div>
   )
 }
