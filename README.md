@@ -11,8 +11,6 @@ This is a fairly simple app with not so many features.
 
 Tech Stack: ReactJS, Redux, Tailwind CSS, React-Router
 
-# Browsing through the app
-
 # Adding Items:
 Click on the Add Items button.
 
