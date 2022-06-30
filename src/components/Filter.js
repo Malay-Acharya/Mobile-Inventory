@@ -17,12 +17,12 @@ export default function Filter() {
         <h3 className='text-m font-bold pb-1'>Categories</h3>
         <form className='flex-col'>
             <div className='flex my-1 font-medium '>
-                <input type="checkbox" className='inline-block' onChange={(e) => {checkbound(e, 5000)}}></input>
-                <label className='pl-3'>Price under 5000</label> 
+                <input id = "checkbox_id1" type="checkbox" className='inline-block' onChange={(e) => {checkbound(e, 5000)}}></input>
+                <label for="checkbox_id1" className='pl-3'>Price under 5000</label> 
             </div>
             <div className='flex my-1 font-medium '>
-                <input type="checkbox" className='inline-block' onChange={(e) => {checkupbound(e, 5000)}}></input>
-                <label className='pl-3'>Price over 5000</label> 
+                <input id="checkbox_id2" type="checkbox" className='inline-block' onChange={(e) => {checkupbound(e, 5000)}}></input>
+                <label for="checkbox_id2" className='pl-3'>Price over 5000</label> 
             </div>
         </form>
     </div>
