@@ -1,7 +1,7 @@
 import Home from "./components/Home";
 import Product from "./components/Product";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
