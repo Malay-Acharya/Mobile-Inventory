@@ -1,21 +1,18 @@
 import Home from "./components/Home";
 import Product from "./components/Product";
 import {
-  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
        <Routes>
           <Route path="/product/:id" element = {<Product/>}>
           </Route>
           <Route path="/" element = {<Home/>}>
           </Route>
         </Routes>
-    </Router>
   );
 }
 
