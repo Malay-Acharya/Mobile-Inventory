@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mobile-Inventory/static/css/main.47474fdf.css",
+    "main.js": "/Mobile-Inventory/static/js/main.ff19253e.js",
+    "static/js/787.97499973.chunk.js": "/Mobile-Inventory/static/js/787.97499973.chunk.js",
+    "index.html": "/Mobile-Inventory/index.html",
+    "main.47474fdf.css.map": "/Mobile-Inventory/static/css/main.47474fdf.css.map",
+    "main.ff19253e.js.map": "/Mobile-Inventory/static/js/main.ff19253e.js.map",
+    "787.97499973.chunk.js.map": "/Mobile-Inventory/static/js/787.97499973.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47474fdf.css",
+    "static/js/main.ff19253e.js"
+  ]
+}
