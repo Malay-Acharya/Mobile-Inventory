@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
 import { DELETEITEM } from '../actions';
+import { Link } from "react-router-dom";
 
 export default function Gallery() {
     const list = useSelector(state => state.changeinventory)
@@ -12,7 +13,7 @@ export default function Gallery() {
                 return(
                     <div key = {item.id} className=' border-2 border-grey h-96 flex flex-col items-center py-4 relative' >
                         <div className='overflow-hidden cursor-pointer'>
-                            <img src={item.image} alt = "the phone" className="h-64"></img>
+                            <Link to= {`/product/${item.id}`}><img src={item.image} alt = "the phone" className="h-64"></img></Link>
                         </div>
                         <h2 className=''>{item.name}</h2>
                         <h2 className=''>{item.price}</h2>

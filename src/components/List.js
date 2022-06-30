@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { DELETEITEM } from '../actions';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
+import { Link } from "react-router-dom";
 
 export default function MainList() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ export default function MainList() {
       {list.filter(item => item.vis === 1).map(item => {
         return(
           <div key = {item.id} className=' pl-4 py-1 border-2 border-black flex gap-4'>
-            <h2 className='cursor-pointer'>{item.name}</h2>
+            <Link to= {`/product/${item.id}`}><h2 className='cursor-pointer'>{item.name}</h2></Link>
             <h2>Price: {item.price}</h2>
             <h2>Available Units: {item.units}</h2>
             <h2 onClick={() => {dispatch(DELETEITEM(item))}} className = 'absolute right-32 cursor-pointer'>Delete</h2>
