@@ -8,7 +8,7 @@ export default function MainList() {
   const list = useSelector(state => state.changeinventory);
   return (
     <div className='my-4 flex flex-col gap-4 ml-2'>
-      {list.map(item => {
+      {list.filter(item => item.vis === 1).map(item => {
         return(
           <div key = {item.id} className=' pl-4 py-1 border-2 border-black flex gap-4'>
             <h2 className='cursor-pointer'>{item.name}</h2>

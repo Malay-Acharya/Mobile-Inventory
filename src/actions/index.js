@@ -34,3 +34,17 @@ export const CHANGEVIEW = (item) =>{
         payload: item
     }
 }
+
+export const FILTERUNDER = (check, item) =>{
+    return{
+        type: 'FILTERUNDER',
+        payload: {check,item}
+    }
+}
+
+export const FILTEROVER = (check,item) =>{
+    return{
+        type: 'FILTEROVER',
+        payload: {check, item}
+    }
+}
