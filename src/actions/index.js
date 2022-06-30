@@ -5,6 +5,13 @@ export const ADDITEM = (item) => {
     }
 }
 
+export const DELETEITEM = (item) =>{
+    return {
+        type: 'DELETEITEM',
+        payload: item
+    }
+}
+
 export const CHANGECLICK = (item) => {
     return {
         type: 'CHANGECLICK',

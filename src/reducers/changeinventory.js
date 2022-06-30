@@ -44,6 +44,11 @@ const changeinventory = (state = initialState, action) => {
             action.payload["id"] = i+1;
             state.push(action.payload);
             return [...state];
+
+        case "DELETEITEM":
+            var j = state.indexOf(action.payload)
+            state.splice(j, 1);
+            return [...state];
         default: 
             return state;
     }
