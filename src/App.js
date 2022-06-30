@@ -1,3 +1,4 @@
+import Filter from "./components/Filter";
 import Header from "./components/Header";
 import View from "./components/View";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header/>
       <div className="relative">
+        <Filter/>
         <View/>
       </div>
     </>
