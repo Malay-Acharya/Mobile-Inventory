@@ -1,3 +1,5 @@
+
+
 export const ADDITEM = (item) => {
     return {
         type: 'ADDITEM',
@@ -8,6 +10,13 @@ export const ADDITEM = (item) => {
 export const DELETEITEM = (item) =>{
     return {
         type: 'DELETEITEM',
+        payload: item
+    }
+}
+
+export const SORT = (item) =>{
+    return{
+        type: 'SORT',
         payload: item
     }
 }
