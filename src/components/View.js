@@ -21,7 +21,7 @@ export default function View() {
             <label className='pr-2 text-gray-500'>Sort By</label>
             <select defaultValue="Featured" name="view" className='outline-0 border-6 focus:outline-none cursor-pointer '>
             <option value="Featured">Featured</option>
-            <option value="Lowest">Price: Low to Hight</option>
+            <option value="Lowest">Price: Low to High</option>
             <option value="Highest">Price: High to Low</option>
             </select>
         </form>

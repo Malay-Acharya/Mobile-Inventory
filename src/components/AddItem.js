@@ -7,7 +7,7 @@ export default function AddItem() {
   const [state, changestate] = useState(false);
   return (
     <button  onClick={() => {changestate(!state);dispatch(CHANGECLICK(state))}} className='absolute top-6 left-80 bg-black text-white font-bold px-8 py-2'>
-        Add Item
+        {state === false?(<>Add Item</>):(<>Close</>)}
     </button>
   )
 }
