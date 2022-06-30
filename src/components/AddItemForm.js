@@ -8,7 +8,7 @@ export default function AddItemForm() {
     const [os, changeos] = useState("");
     const [ram, changeram] = useState("");
     const [units, changeunits] = useState("");
-    const [weight, chagneweight] = useState("");
+    const [weight, changeweight] = useState("");
     const dispatch = useDispatch();
     return (
         <form className='flex w-11/12 gap-4' onSubmit={(e)=>{
@@ -22,6 +22,12 @@ export default function AddItemForm() {
                 "weight": weight,
                 "image": "https://m.media-amazon.com/images/I/717eAvRa5dL._SL1500_.jpg",
             }
+            changename(" ");
+            changeprice(" ");
+            changeos(" ");
+            changeram(" ");
+            changeunits(" ");
+            changeweight(" ");
             dispatch(ADDITEM(obj))
         }}>
             <div className='flex'>
@@ -30,8 +36,8 @@ export default function AddItemForm() {
                     <label className='block pr-4'>Price of the product:</label>
                 </div>
                 <div className='pb-4 w-40 flex flex-col gap-2'>
-                    <input onChange = {(e) =>{changename(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
-                    <input onChange = {(e) =>{changeprice(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {name} onChange = {(e) =>{changename(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {price} onChange = {(e) =>{changeprice(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
                 </div>
             </div>
             <div className = 'flex'>
@@ -40,8 +46,8 @@ export default function AddItemForm() {
                     <label className='block pr-4'>RAM:</label>
                 </div>
                 <div className='pb-4 w-40 flex flex-col gap-2'>
-                    <input onChange = {(e) =>{changeos(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
-                    <input onChange = {(e) =>{changeram(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {os} onChange = {(e) =>{changeos(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {ram} onChange = {(e) =>{changeram(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
                 </div>
             </div> 
             <div className='flex'>
@@ -50,8 +56,8 @@ export default function AddItemForm() {
                     <label className='block pr-4'>Available Units:</label>
                 </div>
                 <div className='pb-4 w-40 flex flex-col gap-2'>
-                    <input onChange = {(e) =>{chagneweight(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
-                    <input onChange = {(e) =>{changeunits(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {weight} onChange = {(e) =>{changeweight(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
+                    <input value = {units} onChange = {(e) =>{changeunits(e.target.value)}} className='block pl-2 border-2 border-black ' type ="text"></input>
                 </div>
             </div>
             <div className='bg-black h-10 text-white font-bold px-4 py-2 mt-6'>
