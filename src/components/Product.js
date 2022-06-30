@@ -1,12 +1,19 @@
 import React from 'react'
 import { useParams } from "react-router-dom"
 import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { useDispatch } from 'react-redux';
+import { CHANGEVIEW } from '../actions';
 
 export default function Product() {
+    const dispatch = useDispatch();
     let obj = useParams().id;
     const st = useSelector(state => state.changeinventory);
     let idx = st.filter(x => x.id == obj);
     idx = idx[0];
+    const val = useSelector(state =>state.changeview);
+    if(val === true){
+        dispatch(CHANGEVIEW(val));
+    }
     return (
     <div>
         <div className='w-screen bg-black p-4 text-white font-bold text-lg'>Mobile Store</div>
