@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Getting Started with Mobile Inventory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note: This App is not responsive and is suppossed to be viewed on native Desktop screens. I'll make it responsive soon.
 
-## Available Scripts
+1. Clone this repository.
+2. Open your terminal (ofc in the repo folder).
+3. Run npm install
+4. Run npm start
 
-In the project directory, you can run:
+This is a fairly simple app with not so many features.
 
-### `npm start`
+Tech Stack: ReactJS, Redux, Tailwind CSS, React-Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Adding Items:
+Click on the Add Items button.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/71935782/176692740-c35aeabf-14e7-4654-94dd-e0906824f4ac.png)
 
-### `npm test`
+A simple form pops up wherein you can fill the details of the product and click Submit to add it to the inventory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/71935782/176694855-1d931a62-796d-490d-9509-adc8faf4cd34.png)
 
-### `npm run build`
+Implemented Using: Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Deleting Items:
+Click on the X over the item you want to delete to delete it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/71935782/176693177-a383d2fc-9447-4403-9cfc-02a147a4e26e.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implemented Using: Redux and splicing.
 
-### `npm run eject`
+# Changing the View
+You can switch between the Gallery View and List View , using the dropdown button on the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/71935782/176693346-5aaf77b8-07e2-462f-8a51-79ef75900450.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Implmented using: State variables and Redux.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Sorting the inventory
+Three methods are available to sort the inventory items:
+1. Featured: Sorts according to the id of the product.
+2. Price: High to Low: Descending order of prices.
+3. Price: Low to High: Ascending order of prices.
+Implemented using: Redux, Custom Sorting functions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/71935782/176693702-46263c88-a25f-4776-968b-98707d7b6f46.png)
 
-## Learn More
+# Filtering the data:
+Two Filters are available for filtering the data.
+1. Price Under 5000: displays items with price less than 5000
+2. Price Over 5000: displays items with price over 5000
+Implemented Using: Redux, filter and map.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/71935782/176694010-cd93cb28-b119-4406-bf7b-1d1994988cf2.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Product Landing Page:
+Click on any item's image in the Gallery view or name in the List View to open its product page.
+Implemented Using: React Router
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
